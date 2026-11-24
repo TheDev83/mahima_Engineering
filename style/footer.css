@@ -1,0 +1,162 @@
+/* ================================
+   FOOTER SECTION
+================================ */
+.footer-section {
+    padding: 60px 0 30px;
+    background: #ffffff;
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================================
+   BRAND (LOGO + COMPANY NAME)
+================================ */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo {
+    max-width: 60px;
+    height: auto;
+}
+
+.footer-company-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f1f1f;
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+}
+
+/* ================================
+   FOOTER LINKS
+================================ */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #245b7c;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #1a3f57;
+    text-decoration: underline;
+}
+
+/* ================================
+   CONTACT INFO
+================================ */
+.footer-contact p {
+    color: #2b2b2b;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.footer-contact strong {
+    font-weight: 600;
+}
+
+.footer-contact a {
+    color: #245b7c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   DIVIDER
+================================ */
+.footer-divider {
+    margin: 40px 0 20px;
+    border-top: 2px solid #cfcfcf;
+}
+
+/* ================================
+   BOTTOM FOOTER
+================================ */
+.footer-copy {
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer-bottom-link {
+    color: #333333;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-link:hover {
+    color: #245b7c;
+    text-decoration: underline;
+}
+
+/* ================================
+   RESPONSIVE STYLES
+================================ */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .footer-company-name {
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-contact {
+        margin-top: 10px;
+    }
+
+    .footer-bottom-link {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .footer-company-name {
+        font-size: 18px;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+    }
+
+    .footer-contact p {
+        font-size: 14px;
+    }
+}

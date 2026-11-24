@@ -1,0 +1,254 @@
+   /* CNC BANNER */
+.cnc-banner {
+    height: 420px; /* Banner height */
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0)),
+        url('../images/CA1.webp') center / cover no-repeat;
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+}
+
+/* CONTENT */
+.banner-title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.banner-subtitle {
+    font-size: 17px;
+    color: #ddd;
+    max-width: 500px;
+    margin-bottom: 28px;
+}
+
+/* BUTTON */
+.banner-btn {
+    background: #1e5d87;
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+    background: #164869;
+    transform: translateY(-2px);
+}
+
+/* ANIMATION */
+.animate-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.9s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cnc-banner {
+        height: 320px;
+    }
+    .banner-title {
+        font-size: 34px;
+    }
+}
+
+
+
+/* capability section 2 */
+
+.cnc-modern {
+  background: linear-gradient(135deg, #f8fafc, #eef2f7);
+  padding: 80px 0;
+}
+
+/* Badge */
+.cnc-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #0d6efd, #00c6ff);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.cnc-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.cnc-text {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Points */
+.cnc-points .point-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.cnc-points .dot {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #0d6efd, #00c6ff);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(13, 110, 253, 0.15);
+}
+
+/* IMAGE CARD */
+.cnc-image-box {
+  position: relative;
+  max-width: 520px;
+  height: 360px;
+  margin-left: auto;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+  transition: all 0.4s ease;
+}
+
+.cnc-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.cnc-image-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top right,
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0)
+  );
+}
+
+/* Hover */
+.cnc-image-box:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cnc-title {
+    font-size: 2rem;
+  }
+
+  .cnc-modern {
+    text-align: center;
+  }
+
+  .cnc-image-box {
+    max-width: 100%;
+    height: 260px;
+    margin: 30px auto 0;
+  }
+
+  .cnc-points .point-item {
+    justify-content: center;
+  }
+}
+             /* capability section 3 */
+
+
+
+.cnc-milling {
+  padding: 80px 0;
+  background: #f8f9fb;
+}
+
+/* IMAGE BOX */
+.milling-image-box {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.milling-image-box img {
+  width: 100%;
+  height: 360px;       /* 🔥 CONTROL IMAGE SIZE */
+  object-fit: cover;  /* 🔥 NO STRETCH */
+  display: block;
+}
+
+/* CONTENT */
+.milling-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1f2a37;
+  margin-bottom: 18px;
+}
+
+.milling-text {
+  font-size: 1.05rem;
+  color: #4a5568;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+/* POINTS */
+.milling-points {
+  margin-top: 22px;
+}
+
+.milling-point {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.milling-icon {
+  width: 10px;
+  height: 10px;
+  background: #0d6efd;   /* SAME BLUE AS BUTTON */
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cnc-milling {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .milling-image-box img {
+    height: 260px;
+  }
+
+  .milling-point {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,52 @@
+            for a quatation
+
+CREATE TABLE Clientquotations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100),
+    company_name VARCHAR(100),
+    email VARCHAR(100),
+    phone VARCHAR(20),
+    service_type VARCHAR(100),
+    material VARCHAR(100),
+    quantity INT,
+    delivery_date DATE,
+    message TEXT,
+    file_path VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+         for client contact
+
+
+CREATE TABLE contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    company_name VARCHAR(150),
+    contact_number VARCHAR(20),
+    address VARCHAR(255),
+    email VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+        for Admin Login
+
+
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50) UNIQUE NOT NULL,
+password VARCHAR(100) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+
+
+
+
+
+

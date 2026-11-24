@@ -1,0 +1,81 @@
+.contact-wrapper {
+    max-width: 1100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.contact-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 50px;
+}
+
+.contact-info h2 {
+    color: #a6532b;
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+.sub-text {
+    color: #a6532b;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #555;
+}
+
+.contact-email {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-icons span {
+    display: inline-block;
+    margin-right: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.social-icons span:hover {
+    transform: scale(1.2);
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #a6532b;
+    box-shadow: 0 0 0 0.15rem rgba(166, 83, 43, 0.25);
+}
+
+.send-btn {
+    background: linear-gradient(135deg, #a6532b, #8c4422);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+.send-btn:hover {
+    background: linear-gradient(135deg, #8c4422, #6f351b);
+    transform: translateY(-2px);
+}
+.rst-btn{
+   background: linear-gradient(135deg, #9e231aff, #8c3022ff);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+.rst-btn:hover {
+    background: linear-gradient(135deg, #9e231aff, #8c3022ff);
+    transform: translateY(-2px);
+}
